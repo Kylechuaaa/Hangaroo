@@ -1,0 +1,5 @@
+def isWordGuessed():
+    secretword = input("Please enter Secret Word: ")
+    letters = input("Please enter letters guessed in a list: ")
+    print("Your word is ",secretword)
+    print("The letters are ",letters)
