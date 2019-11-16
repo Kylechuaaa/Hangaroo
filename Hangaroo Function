@@ -1,0 +1,25 @@
+def Hangaroo():
+    secretWord = input("Enter your secret Word!: ")
+    word = list(secretWord)
+    Letters = []
+    Letters.extend(word)
+    
+    for i in range(len(Letters)):
+        Letters[i] = "_"
+        
+    print(' '.join(Letters))
+    print()
+    counter = 0
+        
+    while counter < len(word):
+        Letter = input("Guess a letter please!: ")
+        Letter = Letter.lower()
+            
+        for i in range(len(word)):
+            if word[i] == Letter:
+                Letters[i] = Letter
+                counter = counter + 1
+                print(' '.join(Letters))
+                print()
+    
+    print("You have guessed correctly")
